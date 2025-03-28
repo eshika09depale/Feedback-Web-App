@@ -1,48 +1,128 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f4f4f9;
+    background-color: #74ece4;
+    font-family: 'Arial', sans-serif;
 }
 
-.feedback-container {
+.container {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    height: 1660px;
 }
 
 h2 {
+    font-size: 32px;
+    color: #007bff;
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 15px;
 }
 
-input, textarea, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+.fs-6 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #666666;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: none;
     border: 1px solid #ddd;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
 
-button {
-    background-color: #4CAF50;
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    position: absolute;
     color: white;
-    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    top: 10px;
+    left: 50%;
 }
 
-button:hover {
-    background-color: #45a049;
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
 }
 
-.charts-container {
-    margin-top: 30px;
-    width: 80%;
+.row.mb-3 {
+    margin-bottom: 20px;
+}
+
+.d-flex {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-check-label {
+    color: #555555;
+}
+
+.form-check-inline {
+    margin-right: 20px;
+}
+
+textarea.form-control {
+    border-radius: 10px;
+    height: 100px;
+}
+
+.col-md-12,
+.col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.d-flex.align-items-center {
+    justify-content: center;
+}
+
+.form-check-inline label {
+    margin-left: 10px;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Customizing checkbox */
+.form-check-label {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
